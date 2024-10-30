@@ -1,0 +1,166 @@
+/* Custom Styles of Chatmetrics */
+
+#chatmetrics-content {
+  display: flex;
+	margin: 20px 20px 0 0;
+	font-size: 14px;
+  color: #444;
+}
+
+.column-left {
+ float: left;
+ width: 530px;
+ padding: 30px;
+ color: #444;
+ background-color: #fff;
+}
+
+.column-right {
+ float: right;
+ width: 300px;
+ padding: 30px;
+ color: #fff;
+ background-color: #2717C9;
+}
+
+.column-right h1,
+.column-right h2,
+.column-right h3,
+.column-right h4 {
+	 color: #fff;
+}
+
+#about-chatmetrics p {
+	font-size: 14px;
+}
+
+#how-chatmetrics-works p {
+	font-size: 14px;
+}
+
+td.chat-enable {
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+td.msg-logged {
+	font-size: 14px;
+}
+
+.button-chat {
+	font-size: 14px !important;
+    height: 35px !important;
+    border: 0 !important;
+    padding: 0 15px 1px !important;
+    background-color: #ff8f00 !important;
+    color: #fff !important;
+}
+.button-submit {
+	margin-top: 20px !important;
+  background-color: #ff8f00 !important;
+}
+.button-signup {
+  margin-top: 20px !important;
+  padding-top: 5px !important;
+  background-color: #2717C9 !important;
+}
+.chatform-fieldset {
+	margin-bottom: 10px !important;
+	width: 100%;
+}
+
+.chatform-field {
+	height: 40px;
+	width: 300px;
+}
+
+.ks-logo img {
+	margin-left: -10px;
+}
+.ks-logo {
+	margin-bottom: 20px;
+}
+.noaccount {
+  font-weight: normal;
+  margin: 40px 0 0 0;
+}
+.errormsg {
+  color: red;
+  margin-bottom: 10px;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2717C9;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2717C9;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+#chatmetrics-content {
+  display: block;
+}
+.column-left{ float: none; width: 100%; }
+.column-right{ float: none; width: 100%; }
+}
+
+.update-nag {
+  display: none;
+}
